@@ -3,7 +3,8 @@
 
 #Description
 1. NYC School iPhone app is developed using Swift
-2. This App uses two different frameworks
+2. Supports from iOS 14
+3. This App uses two different frameworks
     - UIKIT
     - SWIFTUI
     
