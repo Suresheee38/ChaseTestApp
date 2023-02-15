@@ -10,7 +10,6 @@ import SwiftUI
 /// SWIFT UI View for detail page
 struct SchoolListDetailView: View {
     @StateObject var viewModel: NYCSchoolDetailViewModel
-    @State var show: Bool
     
     var body: some View {
         VStack {

@@ -46,7 +46,7 @@ class NYCSchoolsViewBuilder: NYCSchoolsViewBuilding {
     
     /// SWIFTUI View
     func buildSchoolDetailsView(nycSchool: NYCSchool) -> UIViewController? {
-        let detailSwiftUIView = SchoolListDetailView(viewModel: NYCSchoolDetailViewModel(nycShcool: nycSchool), show: true)
+        let detailSwiftUIView = SchoolListDetailView(viewModel: NYCSchoolDetailViewModel(nycShcool: nycSchool))
         let detailViewController = UIHostingController(rootView: detailSwiftUIView)
         return detailViewController
     }

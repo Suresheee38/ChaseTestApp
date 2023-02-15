@@ -46,8 +46,8 @@ class NYCSchoolDetailViewModel: NYCSchoolDetailViewModeling, ObservableObject {
         self.nycSchool = nycShcool
         self.networkManaging = networkManaging
         guard let dbn = nycShcool?.dbn else { return }
-        fetchDetail(for: dbn) { detail in
-            self.schoolDetail = detail
+        fetchDetail(for: dbn) { [weak self] detail in
+            self?.schoolDetail = detail
         }
     }
     
